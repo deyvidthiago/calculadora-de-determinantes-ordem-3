@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de determinantes Ordem 3</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- JS-->
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <!--TITULO -->
+    <header><h1>Calculadora de determinantes ordem 3</h1></header>
+    <!-- TERMOS IDEPENDENTES -->
+    <div id="box">
+      <h4>Digite os termos idependentes primeiro</h4>
+      <div id="termos">
+        <p>
+          Digite o primeiro termo:
+          <input type="number" name="" id="inde-1" />
+        </p>
+        <p>
+          O segundo termo:
+          <input type="number" name="" id="inde-2" />
+        </p>
+        <p>
+          O terceiro termo:
+          <input type="number" name="" id="inde-3" />
+        </p>
+      </div>
+    </div>
+    <!-- CAIXA PRINCIPAL-->
+    <section id="main">
+      <!-- MATRIX -->
+      <div id="container">
+        <!-- LINHA 1-->
+        <div id="line-1">
+          <input type="number" name="" id="a11" placeholder="a11" />
+          <input type="number" name="" id="a12" placeholder="a12" />
+          <input type="number" name="" id="a13" placeholder="a13" />
+        </div>
+        <!-- LINHA 2 -->
+        <div id="line-2">
+          <input type="number" name="" id="a21" placeholder="a21" />
+          <input type="number" name="" id="a22" placeholder="a22" />
+          <input type="number" name="" id="a23" placeholder="a23" />
+        </div>
+        <!-- LINHA 3 -->
+        <div id="line-3">
+          <input type="number" name="" id="a31" placeholder="a31" />
+          <input type="number" name="" id="a32" placeholder="a32" />
+          <input type="number" name="" id="a33" placeholder="a33" />
+        </div>
+        <!-- LINHAS ADICIONAIS -->
+        <div id="line-add-1">
+          <p id="line-add-a11"></p>
+          <p id="line-add-a21"></p>
+          <p id="line-add-a31"></p>
+        </div>
+        <div id="line-add-2">
+          <p id="line-add-a12"></p>
+          <p id="line-add-a22"></p>
+          <p id="line-add-a32"></p>
+        </div>
+      </div>
+      <!-- RESULTADOS DO DETERMINANTE PRINCIPAL-->
+      <div id="res-d-1"></div>
+      <div id="res-d-2"></div>
+      <div id="res-sub-d"></div>
+      <hr />
+      <!-- RESULTADO DO DETERMINANTE X-->
+      <div id="res-dx-1"></div>
+      <div id="res-dx-2"></div>
+      <div id="res-sub-dx"></div>
+      <hr />
+      <!-- RESULTADO DO DETERMINANTE Y-->
+      <div id="res-dy-1"></div>
+      <div id="res-dy-2"></div>
+      <div id="res-sub-dy"></div>
+      <hr />
+      <!-- RESULTADO DO DETERMINANTE Z-->
+      <div id="res-dz-1"></div>
+      <div id="res-dz-2"></div>
+      <div id="res-sub-dz"></div>
+      <hr />
+      <div class="resultados">
+        <!-- resultado da divisão de X-->
+        <h5>resultado final:</h5>
+        <div id="res-div-x"></div>
+        <!-- resultado da divisão de Y-->
+        <div id="res-div-y"></div>
+        <!-- resultado da divisão de Z-->
+        <div id="res-div-z"></div>
+        <!--Resultado final-->
+
+      <button id="calcular">CALCULAR</button>
+    </section>
+    <!--FIM -->
+    <footer>&copy; thiago._zzzz</footer>
+  </body>
+</html>
